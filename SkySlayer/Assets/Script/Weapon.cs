@@ -4,7 +4,9 @@ public class Weapon : SerializedMonoBehaviour
 {
     public Bullet bullet;
     [ShowInInspector]
-    public float fireRate
+
+    private float fireRate;
+    public float FireRate
     {
         get { return fireRate; }
         set
@@ -31,6 +33,7 @@ public class Weapon : SerializedMonoBehaviour
     }
 
     float cd;
+
     public void Fire()
     {
         if (cd>= fireInterval)

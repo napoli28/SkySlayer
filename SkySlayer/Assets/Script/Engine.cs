@@ -26,7 +26,7 @@ public class Engine : MonoBehaviour
         {
             if (currentPower > 0.01)
             {
-                currentPower = Mathf.Lerp(currentPower, 0f, 10f * deltaTime);
+                currentPower = Mathf.Lerp(currentPower, 0f, 50f * deltaTime);
             }
             else
             {

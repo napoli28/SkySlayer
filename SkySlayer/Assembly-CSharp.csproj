@@ -70,7 +70,6 @@
     <Compile Include="Assets\Script\ManagedIDTable.cs" />
     <Compile Include="Assets\Script\Radar.cs" />
     <Compile Include="Assets\Script\Unit.cs" />
-    <Compile Include="Assets\Script\UnitManager.cs" />
     <Compile Include="Assets\Script\Weapon.cs" />
     <Compile Include="Assets\Script\Wheel.cs" />
     <None Include="Assets\Visual\Test.shader" />

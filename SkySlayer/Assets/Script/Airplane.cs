@@ -86,17 +86,17 @@ public class Airplane : MonoBehaviour
     void AirForce()
     {
         Forward();
-        Rise();
-        Aileron();
-        Elevator();
-        VerticalStabilizer();
+        //Rise();
+        //Aileron();
+        //Elevator();
+        //VerticalStabilizer();
         void Forward()
         {
-            rigidBody.AddForce(power * transform.forward * deltaTime);
+            rigidBody.AddForce(power * transform.forward * deltaTime * 10);
         }
         void Rise()
         {
-            rigidBody.AddForce(transform.up * localVelocity.z * riseFactor * deltaTime);
+            rigidBody.AddForceAtPosition(transform.up * localVelocity.z * riseFactor * deltaTime, wing.position);
         }
         void Aileron()
         {
